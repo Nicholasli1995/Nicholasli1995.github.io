@@ -45,20 +45,77 @@
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
-	     <p> The following is a list of my completed and on-going research projects.</p>
+	     <p> The following is a list of my completed and on-going research projects in chronological order.</p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
+          <tr onmouseout="reset()" onmouseover="switch_display()">
+            <td style="padding:20px;width:40%;vertical-align:middle">
+              <div class="one">
+              	<div class="two" id='s-3d-rcnn-2'>
+		<img src='images/s-3d-rcnn-2.png' width="280">
+		</div>
+                <img src='images/s-3d-rcnn-1.png' width="280">
+              </div>
+              <script type="text/javascript">
+                function switch_display() {
+                  document.getElementById('s-3d-rcnn-2').style.opacity = "1";
+                }
+
+                function reset() {
+                  document.getElementById('s-3d-rcnn-2').style.opacity = "0";
+                }
+                reset()
+              </script>
+            </td>
+            <td style="padding:0px;width:60%;vertical-align:middle">
+              <a >
+              <papertitle>Joint stereo 3D object detection and implicit surface reconstruction</papertitle>
+              </a>
+              <br>
+              <span class="highlight"><b> Shichao Li</b></span> and Kwang-Ting Cheng
+              <br>
+              Under review
+              <br>
+              <a >Code</a>
+              /
+              <a >Pre-print</a>
+              <p>This is the <b>first</b> binocular system for simultaneous outdoor 3D object detection and implicit shape estimation.</p>              
+            </td>
+
+          <tr>
+            <td style="padding:20px;width:40%;vertical-align:middle">
+              <div class="one">
+                <img src='images/snvc++.jpg' width="280">
+              </div>
+            </td>
+            <td style="padding:0px;width:60%;vertical-align:middle">
+              <a >
+              <papertitle>Stereo Neural Vernier Caliper</papertitle>
+              </a>
+              <br>
+              <span class="highlight"><b> Shichao Li</b></span>, Zechun Liu, Zhiqiang Shen and Kwang-Ting Cheng
+              <br>
+              Under review
+              <br>
+              <a >Code</a>
+              /
+              <a >Pre-print</a>
+              <p>A novel approach for stereo 3D object detection. <b>75.02</b>/<b>60.20</b>/<b>54.68</b> AP3D on KITTI val split using RGB images only.</p>
+            </td>
+
           <!-- onmouseout="voe_stop()" onmouseover="voe_start()" -->
           <tr>
             <td style="padding:20px;width:40%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='voe_image'><video  width=100% height=100% muted autoplay loop>
+                <div class="two" id='voe_image'>
+		<video  width=100% height=100% muted autoplay loop>
                 <source src="images/voe.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-                </video></div>
+                </video>
+		</div>
                 <img src='images/voe.png' width="280">
               </div>
               <script type="text/javascript">
@@ -86,30 +143,10 @@
               <a href="https://arxiv.org/abs/2011.08464">Paper</a>
               /
               <a href="https://www.youtube.com/watch?v=isKo0F3MU68">Video</a>
-	            /
-	            <a href="https://www.bilibili.com/video/BV1jP4y1t7ee">Invited Talk (中文)</a>
+	      /
+	      <a href="https://www.bilibili.com/video/BV1jP4y1t7ee">Invited Talk (中文)</a>
               <p></p>
               <p>Ego-Net lets you recognize egocentric vehicle pose using a single RGB image.</p>
-            </td>
-
-          <tr>
-            <td style="padding:20px;width:40%;vertical-align:middle">
-              <div class="one">
-                <img src='images/snvc.png' width="280">
-              </div>
-            </td>
-            <td style="padding:0px;width:60%;vertical-align:middle">
-              <a >
-              <papertitle>Stereo Neural Vernier Caliper</papertitle>
-              </a>
-              <br>
-	      <a href="https://github.com/Nicholasli1995/SNVC">Code (coming in the future)</a>
-              <br>
-              <span class="highlight"><b> Shichao Li</b></span>, Zechun Liu, Zhiqiang Shen and Kwang-Ting Cheng
-              <br>
-              Under review
-              <br>
-              <p>A novel approach for stereo 3D object detection. <b>75.02</b>/<b>60.20</b>/<b>54.68</b> AP3D on KITTI val split using RGB images only.</p>
             </td>
 
           <tr>
@@ -361,8 +398,10 @@
 	            <br>
 	            Lecturer: Professor Chi-Keung Tang
               <br>
-              
+              <b>Conference Reviewer</b>
               <br>
+              The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+	      <br>
               <b>Journal Reviewer</b>
               <br>
               IEEE Transactions on Image Processing
