@@ -55,8 +55,8 @@
             <td style="padding:20px;width:40%;vertical-align:middle">
               <div class="one">
               	<div class="two" id='s-3d-rcnn-2'>
-		<img src='images/s-3d-rcnn-2.png' width="280">
-		</div>
+		              <img src='images/s-3d-rcnn-2.png' width="280">
+		            </div>
                 <img src='images/s-3d-rcnn-1.png' width="280">
               </div>
               <script type="text/javascript">
@@ -70,6 +70,7 @@
                 reset()
               </script>
             </td>
+
             <td style="padding:0px;width:60%;vertical-align:middle">
               <a >
               <papertitle>Joint stereo 3D object detection and implicit surface reconstruction</papertitle>
@@ -85,12 +86,31 @@
               <p>This is the <b>first</b> binocular system for simultaneous outdoor 3D object detection and implicit shape estimation.</p>              
             </td>
 
-          <tr>
+          <tr onmouseout="reset_snvc()" onmouseover="play_snvc()">
+            
             <td style="padding:20px;width:40%;vertical-align:middle">
               <div class="one">
-                <img src='images/snvc++.jpg' width="280">
+              	<div class="two" id='snvc-demo'>
+		              <img src='images/snvc_demo.gif' width="280">
+		            </div>
+              	<div class="two" id='snvc-img'>
+                  <img src='images/snvc++.jpg' width="280">
+                </div>
               </div>
-            </td>
+              <script type="text/javascript">
+                function play_snvc() {
+                  document.getElementById('snvc-demo').style.opacity = "1";
+                  document.getElementById('snvc-img').style.opacity = "0";
+                }
+
+                function reset_snvc() {
+                  document.getElementById('snvc-demo').style.opacity = "0";
+                  document.getElementById('snvc-img').style.opacity = "1";
+                }
+                reset_snvc()
+              </script>
+            </td>            
+
             <td style="padding:0px;width:60%;vertical-align:middle">
               <a >
               <papertitle>Stereo Neural Vernier Caliper</papertitle>
